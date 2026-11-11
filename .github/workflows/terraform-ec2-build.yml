@@ -22,7 +22,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./Infra
+        working-directory: ./infra
     steps:
 
     - name: Checkout Repo
@@ -58,4 +58,4 @@ jobs:
 
     - name: Terraform apply
       id: apply 
-      run: terraform apply -auto-approve
+      run: terraform apply --auto-approve
